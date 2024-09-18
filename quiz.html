@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - SAT Pro Academy</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+
+    <div class="quiz-page active">
+        <h2>Quiz</h2>
+        <div class="question">
+            <p>Question 1: What is 2 + 2?</p>
+            <input type="text" id="answer-1" placeholder="Your answer"/>
+            <button class="btn" onclick="checkAnswer(1, '4')">Submit Answer</button>
+            <button class="btn" onclick="toggleAnswer('answer-1')">Show Answer</button>
+            <p id="result-1"></p>
+            <p id="answer-1" class="answer">4</p>
+        </div>
+    </div>
+</body>
+</html>
+    

@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+.navbar {
+    background-color: #121212;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.navbar img {
+    height: 100px;
+    border-radius: 600px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    margin: 0 20px;
+}
+.navbar ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+.navbar .btn {
+    background-color: #00bcd4;
+    color: #121212;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.navbar .btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+.hero {
+    background: linear-gradient(135deg, #00bcd4, #121212);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    color: #e0e0e0;
+}
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.hero .btn {
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.hero .btn.secondary {
+    background-color: #00bcd4;
+}
+.hero .btn:hover {
+    background-color: #1e1e1e;
+    transform: scale(1.05);
+}
+.hero img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 350px;
+    width: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    border-radius: 20px;
+}
+.hero img:hover {
+    opacity: 1;
+}
+.features {
+    background-color: #121212;
+    padding: 50px 20px;
+    text-align: center;
+}
+.features h2 {
+    font-size: 36px;
+    margin: 0 0 20px;
+    color: #00bcd4;
+}
+.features .feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.features .feature-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.features .feature-item img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    transition: filter 0.3s;
+}
+.features .feature-item img:hover {
+    filter: brightness(1.2);
+}
+.signin-page, .dashboard, .course-options, .quiz-page, .lecture-page, .examples-page {
+    display: none;
+    padding: 50px 20px;
+    text-align: center;
+}
+.signin-page.active, .dashboard.active, .course-options.active, .quiz-page.active, .lecture-page.active, .examples-page.active {
+    display: block;
+}
+.signin-page h2, .dashboard h2, .course-options h2, .quiz-page h2, .lecture-page h2, .examples-page h2 {
+    font-size: 36px;
+    color: #00bcd4;
+    margin: 0 0 20px;
+}
+.signin-page form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.signin-page input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-sizing: border-box;
+}
+.signin-page .btn {
+    width: calc(100% - 24px);
+    padding: 15px;
+    background-color: #00bcd4;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-sizing: border-box;
+}
+.signin-page .btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+.dashboard .option, .course-options .option, .quiz-page .option, .lecture-page .option, .examples-page .option {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.dashboard .option:hover, .course-options .option:hover, .quiz-page .option:hover, .lecture-page .option:hover, .examples-page .option:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+.dashboard .option img, .course-options .option img, .quiz-page .option img, .lecture-page .option img, .examples-page .option img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    transition: filter 0.3s;
+}
+.dashboard .option img:hover, .course-options .option img:hover, .quiz-page .option img:hover, .lecture-page .option img:hover, .examples-page .option img:hover {
+    filter: brightness(1.2);
+}
+.dashboard .option p, .course-options .option p, .quiz-page .option p, .lecture-page .option p, .examples-page .option p {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+.quiz-page .question, .lecture-page .content, .examples-page .example {
+    margin: 20px 0;
+}
+.quiz-page .answer, .examples-page .solution {
+    display: none;
+    margin: 20px 0;
+}
+.quiz-page .btn {
+    background-color: #00bcd4;
+    color: #121212;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.quiz-page .btn:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
+.quiz-page input, .examples-page input {
+    width: calc(30% - 24px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+.quiz-page input:focus, .examples-page input:focus {
+    border-color: #00bcd4;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 188, 212, 0.5);
+}
+.quiz-page ::placeholder, .examples-page ::placeholder {
+    color: #b0b0b0;
+    opacity: 1; /* Firefox */
+}
