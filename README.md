@@ -1,3 +1,5 @@
+SAT Pro Academy
+
 Overview
 SAT Pro Academy is a sleek and modern learning platform designed to provide users with a variety of courses and interactive learning experiences. The platform features an intuitive interface with easy navigation, offering courses, quizzes, lectures, and practical examples.
 
